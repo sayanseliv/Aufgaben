@@ -2,8 +2,11 @@
  Tasks
 1) node_server
 Создать веб сервер.
+
 x-www-form-urlencoded запросы строками. Через Postman
+
 API:
+
 GET `/person` - возвращает данные о человеке
 
 GET `/person/name` - возвращает только имя человека
@@ -17,9 +20,11 @@ GET `/person/post/recipient` - возвращает только те поля, 
 PUT `/person/update`, с телом {...anything} - запрос который перезаписывает в файле `/api/person.json` всем что было передано в теле.
 
 2) Express_server_mock
+
 Postman Post ->Body->Raw и например { "values": [2, 2, 2, 22, 1, 55, 2, 4, 33, 34, 555] }
 
 x-www-form-urlencoded - передается строкой, а не объектом
+
 Создать сервер Express, который будет накапливать запросы и выдавать их в виде некоторой статистики.
 
 1) На сервер можно отправить данные POST /data/update, где body -> { values: [1, 2, 3....] }
