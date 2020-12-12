@@ -57,3 +57,40 @@ https://cryptojs.gitbook.io/docs/#ciphers
 
 "время создания файла 4": "содержимое файла в JSON",
 }
+
+3)TelegramBot&Server
+
+Разработать два веб-сервиса:
+
+Первый - BotApiWrapperService
+Второй - BalancerService
+Первый сервис реализует отправку данных в телеграмм бота.
+
+Второй сервис получает запросы из Postman/любого другого веб приложения и пересылает их в первый сервис.
+
+Каждый сервис - отдельное NodeJS приложение с express.js как фреймворком для веб сервера.
+
+Реализовать:
+
+1) Отправка прогноза температуры на 6 часов вперед в телеграм бота. Город - указан в get параметрах.
+
+2) Отправка всей информации в текущий момент времени. Город также указан в get параметрах https://openweathermap.org/current
+
+Endpoints на сервис BalancerService.
+
+GET /weather/forecast/6h?city=London
+
+GET /weather/current?city=London
+
+1) https://tlgrm.ru/docs/bots#create-a-new-bot
+
+2) https://github.com/yagop/node-telegram-bot-api
+
+
+Важные коментарии:
+
+1) Абсолютно все запросы должны идти на BalancerService, и только потом пересылаться на BotApiWrapperService, который в свою очередь пересылает на TelegramBot
+
+2) Имя бота - произвольное, практически готовый пример реализации отправки текста - https://github.com/yagop/node-telegram-bot-api
+
+3) Тут много хороших примеров - https://github.com/hosein2398/node-telegram-bot-api-tutorial
