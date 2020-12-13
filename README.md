@@ -125,3 +125,21 @@ GET /weather/current?city=London
 *При нажатии на кнопку сортировки в первый раз - сортирует по возрастанию, при повторном нажатии - по убыванию.
 
 ** Использовать Vuex **
+
+6.Google Maps Vuex
+
+Создать приложение, которое будет использовать google maps vue material.
+
+1) Подключить vue material - https://vuematerial.io/getting-started/
+
+2) Применить кнопки и таблицы из vue material
+
+3) Добавить в существующий лекционный материал следующие фичи:
+
+Кнопка - Round LatLng() - которая округлит значения всех маркеров к целой части (на карте маркеры должны также сместится)
+
+Каждый маркер можно пометить как "Favorite" - используйте checkbox для этого
+
+Favorite маркера имеет другую иконку (выберите любую) - https://developers.google.com/maps/documentation/javascript/examples/icon-simple#maps_icon_simple-javascript
+
+Добавить свитчер - Only favorite - который оставить в таблице только те маркера, что помечены как favorite. На карте тоже должны остаться только favorite
