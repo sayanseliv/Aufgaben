@@ -1,0 +1,37 @@
+{
+  "name": "redux_webinar",
+  "version": "1.0.0",
+  "description": "webinar of Beetroot academy",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/concurrently \"npm run start:api\" \"npm run start:client\"",
+    "start:client": "webpack-dev-server --mode development --hide-modules  --open",
+    "prestart:api": "node tools/createMockDb.js",
+    "start:api": "nodemon tools/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "json-server": "^0.16.1",
+    "nodemon": "^2.0.4",
+    "shortid": "^2.2.15",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "lite-server": "^2.5.4",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}

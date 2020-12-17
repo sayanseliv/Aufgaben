@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light mb-1">
+        <a class="navbar-brand" href="/"
+          ><img class="navbar-brand__img" src="i/logo.svg" />
+          Beetroot academy
+        </a>
+        <ul class="task-list">
+          <li class="task-list__item">Сделать вывод игроков в таблицу.</li>
+          <li class="task-list__item">Вывести фильтр игроков по статусу.</li>
+          <li class="task-list__item">
+            Добавить фильтрацию игроков по статусу в зависимости от выбранного
+            значения
+          </li>
+          <li class="task-list__item">
+            Создать функционал добавления нового игрока
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h1>Game result <span id="game-result"></span></h1>
+      <div class="row">
+        <div class="col-md-7">
+          <section class="filters-box">
+            <select id="status-select" class="custom-select">
+              <option value="-1">Status</option>
+            </select>
+          </section>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>N</th>
+                <th>Name</th>
+                <th>Result</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="results">
+              <tr>
+                <td>1</td>
+                <td>Greg</td>
+                <td>22</td>
+                <td>pro</td>
+              </tr>
+              <tr class="table-info">
+                <td>2</td>
+                <td>Sam</td>
+                <td>42</td>
+                <td>beginer</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Sarah</td>
+                <td>12</td>
+                <td>amateur</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul id="pagination" class="pagination my-5">
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+          </ul>
+        </div>
+        <!-- left column -->
+        <div class="col-md-4 offset-md-1">
+          <h2 class="text-center">Add player</h2>
+
+          <form name="addPlayer">
+            <div class="form-group">
+              <label class="label-control">Name</label>
+              <input type="text" class="form-control" name="playerName" />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Add player" class="btn btn-primary" />
+            </div>
+          </form>
+        </div>
+        <!--  right column -->
+      </div>
+      <!-- .row -->
+    </div>
+    <!-- /.container -->
+  </body>
+</html>
