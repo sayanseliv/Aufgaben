@@ -10,53 +10,47 @@ const items = document.querySelectorAll(".product-box__item");
 
 selectCategory.addEventListener("change", function (event) {
   items.forEach((element) => {
-    if (this.value === "all") {
+    if (this.value === "0") {
+       selectPrice.value = 0
       element.style.display = "flex";
-    } else {
-      if (element.classList.contains(this.value)) {
-        element.classList.add("checked");
-        element.style.display = "flex";
-        // if (element.classList.contains("choose") === false) {
-          // element.style.display = "none";
-          // element.classList.remove("checked");
-        // }
-      } else {
-        element.classList.remove("checked");
-        element.style.display = "none";
-      }
+    } else if (
+      element.classList.contains(this.value) &&
+      element.classList.contains("choose") === true
+    ) {
+      element.classList.add("checked");
+      element.style.display = "flex";
+    } else if (!element.classList.contains(this.value)) {
+      element.classList.remove("checked");
+      element.style.display = "none";
     }
   });
 });
 
 selectPrice.addEventListener("change", function (event) {
-  // console.log(this.value);//value select
   items.forEach((element) => {
-    // console.log(element);
-    if (Number(this.value) === 0) {
+    if (
+      Number(this.value) === 0 &&
+      element.classList.contains("checked") === false
+    ) {
+      selectCategory.value = 0
       element.style.display = "flex";
-    } else {
-      if (
-        Number(this.value) >=
-        numFromText(element.children[2].children[0].innerHTML)
-      ) {
-        element.classList.add("choose");
-        
-        if(element.style.display === "flex"&&element.classList.contains("checked") === true){
-          element.style.display = "flex";
-          console.log(element.style.display === "flex");
-        }
-        // if (element.classList.contains("checked") === false) {
-          // element.style.display = "none";
-          // element.classList.remove("choose");
-        // }
-      } else {
-        element.style.display = "none";
-        element.classList.remove("choose");
-      }
+    } else if (
+      Number(this.value) >=
+        numFromText(element.children[2].children[0].innerHTML) &&
+      element.classList.contains("checked") === true
+    ) {
+      element.classList.add("choose");
+      element.style.display = "flex";
+    } else if (
+      Number(this.value) <
+      numFromText(element.children[2].children[0].innerHTML)
+    ) {
+      element.style.display = "none";
+      element.classList.remove("choose");
     }
   });
 });
-// element.classList.contains("checked")
+
 function giveID(tag, txt) {
   let start = 0;
   tag.forEach((el) => (el.id = `${txt}_${(start += 1)}`));
