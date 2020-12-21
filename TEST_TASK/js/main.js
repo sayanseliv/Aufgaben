@@ -2,16 +2,19 @@ const inputs = document.querySelectorAll(".qty__item");
 const p = document.querySelectorAll("p");
 const button = document.querySelectorAll(".product-box__btn");
 const XXX = document.querySelectorAll(".red-info");
+const box = document.querySelector(".top-header");
 
 const select = document.querySelectorAll(".select-control");
 const selectCategory = select[0];
 const selectPrice = select[1];
 const items = document.querySelectorAll(".product-box__item");
 
+const order = document.querySelector(".btn-check");
+
 selectCategory.addEventListener("change", function (event) {
   items.forEach((element) => {
-    if (this.value === "0") {
-       selectPrice.value = 0
+    if (Number(this.value) === 0) {
+      selectPrice.value = 0;
       element.style.display = "flex";
     } else if (
       element.classList.contains(this.value) &&
@@ -32,7 +35,7 @@ selectPrice.addEventListener("change", function (event) {
       Number(this.value) === 0 &&
       element.classList.contains("checked") === false
     ) {
-      selectCategory.value = 0
+      selectCategory.value = 0;
       element.style.display = "flex";
     } else if (
       Number(this.value) >=
@@ -84,14 +87,80 @@ button.forEach.call(button, function (el) {
   };
 });
 
+order.addEventListener("click", function (event) {
+  order.disabled = true;
+  box.insertAdjacentHTML("beforeBegin", modalStructure());
+  let modal = document.getElementById("modal");
+  modal.style = modalStyle();
+  let content = document.querySelector(".modal-content");
+  content.style = contentStyle();
+  let close = document.querySelector(".close");
+  close.style = closeStyle();
+  let wrapper = document.querySelector(".inputs-wrapper");
+  wrapper.style = wrapperStyle();
+
+});
+
 function numFromText(el) {
   return parseInt(el.match(/\d+/));
 }
+
 function multiply(a, b) {
   return a * b;
 }
 
+function modalStructure() {
+  return `<div id="modal">
+<div class="modal-content">
+<span class="close">&times;</span><Br>
+<div class="inputs-wrapper">
+<input type="text" id="name" name="name" required placeholder="Имя"><Br>
+<input type="email" id="email" name="email" required placeholder="example@gmail.com"><Br>
+<input type="submit">
+</div>
+</div>
+</div>`;
+}
+
+function modalStyle() {
+  return `
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.8)`;
+}
+
+function contentStyle() {
+  return `
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 75%;
+  width: 75%;
+  background-color: #fefefe;
+  border: 1px solid #888;`;
+}
+
+function closeStyle() {
+  return `
+  position: relative;
+  left: 25%;
+  font-size: 28px;
+  font-weight: bold;`;
+}
+
+function wrapperStyle() {
+  return `text-align: left;`;
+}
 inputs.forEach((element) => {
+  //ограничить диапазон инпут
   element.addEventListener("input", function (event) {
     if (isCorrect(event.target)) {
       event.preventDefault();
