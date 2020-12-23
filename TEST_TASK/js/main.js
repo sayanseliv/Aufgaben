@@ -3,6 +3,7 @@ const p = document.querySelectorAll("p");
 const button = document.querySelectorAll(".product-box__btn");
 const XXX = document.querySelectorAll(".red-info");
 const box = document.querySelector(".top-header");
+const strXXX = "XXX";
 
 const select = document.querySelectorAll(".select-control");
 const selectCategory = select[0];
@@ -74,7 +75,7 @@ button.forEach.call(button, function (el) {
     if (!inputNumber) {
       return;
     } else {
-      if (XXX[1].innerText === "XXX" && XXX[0].innerText === "XXX") {
+      if (XXX[1].innerText === strXXX && XXX[0].innerText === strXXX) {
         XXX[0].innerText = inputNumber;
         XXX[1].innerText = multiply(price, inputNumber);
       } else {
@@ -88,17 +89,54 @@ button.forEach.call(button, function (el) {
 });
 
 order.addEventListener("click", function (event) {
-  order.disabled = true;
-  box.insertAdjacentHTML("beforeBegin", modalStructure());
-  let modal = document.getElementById("modal");
-  modal.style = modalStyle();
-  let content = document.querySelector(".modal-content");
-  content.style = contentStyle();
-  let close = document.querySelector(".close");
-  close.style = closeStyle();
-  let wrapper = document.querySelector(".inputs-wrapper");
-  wrapper.style = wrapperStyle();
+  if (XXX[1].innerText === strXXX && XXX[0].innerText === strXXX) {
+    alert(`Ничего не выбрано, пожалуйста выберите сначала блюдо`);
+  } else {
+    order.disabled = true;
+    box.insertAdjacentHTML("beforeBegin", modalStructure());
+    let modal = document.getElementById("modal");
+    modal.style = modalStyle();
+    let content = document.querySelector(".modal-content");
+    content.style = contentStyle();
+    let close = document.querySelector(".close");
+    close.style = closeStyle();
+    let wrapper = document.querySelector(".inputs-wrapper");
+    wrapper.style = wrapperStyle();
+    close.addEventListener("click", function (event) {
+      modal.style.display = modal.style.display.replace("flex", "none");
+    });
+    let form = document.querySelector(".formWithValidation");
+    let name = form.querySelector(".name_input");
+    let email = form.querySelector(".email_input");
+    let fields = form.querySelectorAll(".field");
 
+    form.addEventListener("submit", function (event) {
+      for (let i = 0; i < fields.length; i++) {
+        if (!fields[i]) {
+          event.preventDefault();
+          alert("Поля не заполнены");
+        }
+      }
+
+      if (!validateName(name.value)) {
+        event.preventDefault();
+        alert(`Имя ${name.value} введено не корректно`);
+      } else if (!validateEmail(email.value)) {
+        event.preventDefault();
+        alert(`Email ${email.value} введен не корректно`);
+      } else if (validateEmail(email.value) && validateName(name.value)) {
+        event.stopPropagation();
+        alert(
+          `Спасибо за покупку в количестве ${XXX[0].innerText} штук на сумму ${XXX[1].innerText} грн.`
+        );
+        (XXX[0].innerText = strXXX), (XXX[1].innerText = strXXX);
+      }
+      console.log("clicked on validate");
+      console.log("name_input: ", name.value);
+      console.log("email_input: ", email.value);
+      order.disabled = false;
+    });
+  }
 });
 
 function numFromText(el) {
@@ -109,17 +147,31 @@ function multiply(a, b) {
   return a * b;
 }
 
+function validateName(str) {
+  let nameRegex = /^([А-Я]{1}[а-яё]{1,}|[A-Z]{1}[a-z]{1,})$/; //Имя с Заглавной буквы англ/рус
+  return nameRegex.test(str);
+}
+
+function validateEmail(str) {
+  let emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+  return emailRegex.test(str);
+}
+
 function modalStructure() {
-  return `<div id="modal">
+  return `<form class='formWithValidation'>
+  <div id="modal">
 <div class="modal-content">
 <span class="close">&times;</span><Br>
 <div class="inputs-wrapper">
-<input type="text" id="name" name="name" required placeholder="Имя"><Br>
-<input type="email" id="email" name="email" required placeholder="example@gmail.com"><Br>
-<input type="submit">
+<label for='name_input'>Имя: </label>
+<input type="text" class="name_input field" name="name" required placeholder="Имя"><Br>
+<label for='email_input'>Имя: </label>
+<input type="email" class="email_input field" name="email" required placeholder="example@gmail.com"><Br><Br>
+<input type="submit" class="validateBtn" value='Submit'>
 </div>
 </div>
-</div>`;
+</div>
+</form>`;
 }
 
 function modalStyle() {
