@@ -1,0 +1,96 @@
+{
+  "players": [
+    {
+      "id": "GbV9auVu1",
+      "name": "Bill",
+      "result": 77,
+      "status": 1
+    },
+    {
+      "id": "sG4u-HMPwu",
+      "name": "Pete",
+      "result": 40,
+      "status": 2
+    },
+    {
+      "id": "at1j6-wzJf",
+      "name": "Ashley",
+      "result": 12,
+      "status": 3
+    },
+    {
+      "id": "aV43MvO87M",
+      "name": "Tom",
+      "result": 87,
+      "status": 1
+    },
+    {
+      "id": "cD6Mn3HRQj",
+      "name": "Barbara",
+      "result": 33,
+      "status": 2
+    },
+    {
+      "id": "H50zxWt2Xv",
+      "name": "Sasha",
+      "result": 7,
+      "status": 3
+    },
+    {
+      "id": "zpISxS35jJ",
+      "name": "Greg",
+      "result": 76,
+      "status": 1
+    },
+    {
+      "id": "0Ze4QnUC3d",
+      "name": "Pete",
+      "result": 45,
+      "status": 2
+    },
+    {
+      "id": "-ZZsyHgxgB",
+      "name": "Jim",
+      "result": 17,
+      "status": 3
+    },
+    {
+      "id": "E9LyvaQBPS",
+      "name": "Nicole",
+      "result": 20,
+      "status": 3
+    },
+    {
+      "name": "ffds",
+      "result": 0,
+      "status": 3,
+      "id": "R5_m__X"
+    },
+    {
+      "name": "ffds",
+      "result": 0,
+      "status": 3,
+      "id": "NvlFx0Y"
+    },
+    {
+      "name": "ffds",
+      "result": 0,
+      "status": 3,
+      "id": "B5KH-R3"
+    }
+  ],
+  "statuses": [
+    {
+      "id": 1,
+      "title": "pro"
+    },
+    {
+      "id": 2,
+      "title": "beginer"
+    },
+    {
+      "id": 3,
+      "title": "amateur"
+    }
+  ]
+}
