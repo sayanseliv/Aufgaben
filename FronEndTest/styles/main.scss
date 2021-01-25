@@ -98,13 +98,12 @@ a {
 .likes {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  margin: 20px 0 20px 0;
 
+  margin: 20px 0 20px 0;
+  align-items: flex-end;
   z-index: 50;
   &__r_likes {
     position: absolute;
-    padding-top: 23px;
     padding-left: 40px;
   }
 
