@@ -1,0 +1,126 @@
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    background-size: 100%, 100%, 60% 70vh, cover;
+    &__main {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        &__clicker {
+          & img {
+            height: 60%;
+          }
+        }
+        &__cup {
+          margin-top: -4px;
+          margin-right: 0;
+          & img {
+            height: 67%;
+          }
+        }
+        &__prize {
+          font-size: 15px;
+        }
+        .logo {
+          left: 40%;
+          top: 5%;
+        }
+      }
+    }
+    .bonus {
+      font-size: 1.5em;
+      line-height: 30px;
+      z-index: 42;
+      &__ForBuilding p {
+        text-indent: 0.5em;
+      }
+    }
+    .likes {
+      margin: 0;
+      &__l_likes {
+        & img {
+          height: 35px;
+        }
+      }
+      &__r_likes {
+        padding-top: 11px;
+        padding-left: 19px;
+        & img {
+          height: 35px;
+        }
+      }
+      &__transparent {
+        padding-left: 9px;
+        & img {
+          height: 46px;
+        }
+      }
+      &__yellow {
+        padding-left: 47px;
+        & img {
+          height: 46px;
+        }
+      }
+    }
+  }
+
+  .content {
+    justify-content: initial;
+    &__button {
+      flex: 0.3 0 auto;
+      flex-basis: 103px;
+      & span {
+        font-size: 1em;
+      }
+      & button {
+        height: 40px;
+        width: 80%;
+      }
+      &__shadow {
+        height: 44%;
+        width: 80%;
+        top: -38%;
+      }
+    }
+    &__text {
+      line-height: 20px;
+      font-size: 1em;
+      .knight {
+        left: 45%;
+        height: 70vh;
+        top: 37%;
+      }
+    }
+  }
+  .rules {
+    top: 150%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__group {
+      align-items: center;
+      &__groups {
+        margin: 0 10px 0 10px;
+      }
+    }
+    &__icons {
+      justify-content: flex-end;
+      &__image img {
+        margin: 0 10px 0 10px;
+      }
+    }
+  }
+  .ballsFirst {
+    left: 50%;
+    top: 20%;
+  }
+  .ballsSecond {
+    left: 20%;
+    top: 20%;
+  }
+  .ballsThird {
+    left: 25%;
+    top: 50%;
+  }
+}

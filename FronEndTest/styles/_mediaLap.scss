@@ -1,0 +1,86 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .wrapper__main {
+      flex: 0.6 1 auto;
+    }
+    .bonus {
+      font-size: 2.5em;
+    }
+    .header {
+      height: 0vh;
+      .logo {
+        left: 38%;
+        top: 5%;
+      }
+    }
+    .likes {
+      margin: 10px 0 10px 0;
+      &__l_likes img {
+        height: 46px;
+      }
+      &__r_likes {
+        padding-top: 14px;
+        padding-left: 26px;
+  
+        & img {
+          height: 46px;
+        }
+      }
+      &__transparent {
+        padding-left: 15px;
+        & img {
+          height: 60px;
+        }
+      }
+      &__yellow {
+        padding-left: 63px;
+        & img {
+          height: 60px;
+        }
+      }
+    }
+    .content {
+      &__button {
+        & span {
+          font-size: 1em;
+        }
+        & button {
+          height: 55px;
+          width: 80%;
+        }
+        &__shadow {
+          height: 64%;
+          width: 80%;
+          top: -55%;
+        }
+      }
+      &__text {
+        font-size: 2.5em;
+      }
+    }
+    .rules {
+      top: 100%;
+    }
+    .footer {
+      &__group {
+        flex: 0.5 2 auto;
+      }
+      &__icons {
+        &__image {
+          width: 7%;
+        }
+      }
+    }
+    .ballsFirst {
+        left: 60%;
+        top: 20%;
+      }
+      .ballsSecond {
+        left: 80%;
+        top: 60%;
+        z-index: 50;
+      }
+      .ballsThird {
+        left: 25%;
+        top: 60%;
+      }
+  }

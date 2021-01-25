@@ -1,0 +1,284 @@
+@import "./reset";
+@import "./fonts";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  ::selection {
+    background: rgb(255, 204, 0);
+  }
+}
+p {
+  text-indent: 0.5em;
+}
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.mob_wrapper {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100vh;
+  background: url("../images/Background/Bg-1.png") no-repeat top center,
+    url("../images/text/shadows.png") no-repeat bottom center,
+    url("../images/Background/Castle.gif") no-repeat bottom right,
+    url("../images/Background/Bg-3.gif") no-repeat center center;
+  background-size: 100%, 100%, 50% 90vh, cover;
+  padding: 3.6%;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.5 0 auto;
+  }
+}
+a {
+  color: white;
+}
+.header {
+  width: 100%;
+  margin-left: -0.6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 13vh;
+  z-index: 50;
+  &__divider {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__prize {
+    font-size: 20px;
+    font-family: "NeueMachina-Ultrabold";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__results {
+    font-family: "NeueMachina-Regular";
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 8px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__cup {
+    position: relative;
+    margin-right: 15px;
+    margin-top: -18px;
+  }
+}
+
+.bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.5em;
+  line-height: 40px;
+  font-family: "Druk Text Wide Cyr Medium Italic";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  text-transform: uppercase;
+
+  &__ForBuilding p {
+    text-indent: 0;
+  }
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 20px 0 20px 0;
+
+  z-index: 50;
+  &__r_likes {
+    position: absolute;
+    padding-top: 23px;
+    padding-left: 40px;
+  }
+
+  &__transparent {
+    padding-left: 20px;
+  }
+
+  &__yellow {
+    position: absolute;
+    padding-left: 93px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 80px;
+
+  &__button {
+    flex: 0.7 0 auto;
+    flex-basis: 270px;
+    button {
+      position: relative;
+      height: 80px;
+      width: 80%;
+      box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
+      transform: skewX(170deg);
+      background-color: rgb(248, 255, 19);
+      z-index: 50;
+
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        transition: background-color 0.5s ease-in-out;
+
+        & + .content__button__shadow {
+          border: solid 0.2px transparent;
+          background-color: transparent;
+        }
+      }
+    }
+    &__shadow {
+      position: relative;
+      left: 1%;
+      top: -90%;
+      height: 100%;
+      width: 80%;
+      border: solid 0.2px white;
+      background-color: rgb(64, 11, 100);
+      transform: skewX(170deg);
+      opacity: 0.8;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    font-size: 3.5em;
+    line-height: 50px;
+    font-family: "Druk Text Wide Cyr Medium Italic";
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    text-transform: uppercase;
+    .knight {
+      height: 100vh;
+      top: 10%;
+      position: absolute;
+      left: 40%;
+      z-index: 40;
+      & img {
+        height: 90%;
+      }
+    }
+  }
+
+  &__tUp {
+    color: white;
+    height: 80px;
+    z-index: 39;
+  }
+
+  &__tDown {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: rgba(248, 255, 19, 0);
+    position: relative;
+    top: -80px;
+    z-index: 41;
+  }
+}
+
+.button_span {
+  display: inline-block;
+  font-style: italic;
+  font-family: "Druk Text Wide Cyr Heavy Italic";
+  text-transform: uppercase;
+  font-size: 1.8em;
+  transform: skewX(-170deg);
+  z-index: 46;
+}
+
+.rules {
+  position: relative;
+  top: 60%;
+}
+
+.footer {
+  display: inline-flex;
+  &__group {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &__groups img {
+      height: 20px;
+    }
+  }
+  &__icons {
+    display: inline-flex;
+  }
+}
+.footer {
+  z-index: 50;
+  &__group {
+    flex: 1 2 auto;
+    position: relative;
+    bottom: 0;
+  }
+  &__icons {
+    flex: 4 1;
+    justify-content: space-between;
+    &__image {
+      display: flex;
+      width: 7%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.ballsFirst {
+  position: absolute;
+  left: 77%;
+  top: 23%;
+}
+.ballsSecond {
+  position: absolute;
+  left: 85%;
+  top: 77%;
+}
+.ballsThird {
+  position: absolute;
+  left: 25%;
+  top: 79%;
+}
+.logo {
+  display: none;
+  position: absolute;
+  background: url("../images/Bonus/meteor.png") 0 0 no-repeat;
+  width: 130px;
+  height: 130px;
+  left: 25%;
+  animation: logo 2s steps(47, end) infinite;
+  margin: auto;
+}
+
+@keyframes logo {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -6110px 0;
+  }
+}
+
+@import "./mediaLap";
+
+@import "./mediaIp";
+
+@import "./mobile";
