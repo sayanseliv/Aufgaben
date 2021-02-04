@@ -12,7 +12,7 @@
         <div class="header">
           <div class="header__clicker">
             <img
-              src="./images/Header/clickable.gif"
+              src="./images/Header/clickable.png"
               alt="clicker"
               style="vertical-align: middle"
             />
@@ -38,17 +38,8 @@
         <div class="bonus">
           <div class="bonus__present"><span>дарим</span></div>
           <div class="likes">
-            <div class="likes__l_likes">
-              <img src="./images/Bonus/l_likes.png" alt="likes" />
-            </div>
-            <div class="likes__r_likes">
-              <img src="./images/Bonus/l_likes.png" alt="likes" />
-            </div>
-            <div class="likes__transparent">
-              <img src="./images/Bonus/likes-2.png" alt="likes" />
-            </div>
-            <div class="likes__yellow">
-              <img src="./images/Bonus/likes.gif" alt="likes" />
+            <div class="likes__logo">
+              <img src="./images/Bonus/likes.png" alt="likes" />
             </div>
           </div>
           <div class="bonus__ForBuilding">
@@ -59,21 +50,28 @@
           </div>
         </div>
         <div class="content">
-          <div class="content__button">
-            <button id="cont_but">
-              <span class="button_span">Надави сюда</span>
-              <div class="rules">
-                <a id="rules_a" href="#">Правила и условия</a>
-              </div>
-            </button>
-            <div class="content__button__shadow"></div>
+          <div class="content__wrapper">
+            <div class="content__button">
+              <button id="cont_but">
+                <span class="button_span">Надави сюда</span>
+              </button>
+              <div class="content__button__shadow"></div>
+            </div>
+            <div class="content__rules">
+              <a id="rules_a" href="#">Правила и условия</a>
+            </div>
           </div>
           <div class="content__text">
             <div class="knight">
               <img
                 class="image_knight"
-                src="./images/text/knight.gif"
+                src="./images/text/knight.png"
                 alt="knight"
+              />
+              <img
+                class="image_mobile_knight"
+                src="./images-mobile/knight/knight.png"
+                alt="mobile-knight"
               />
             </div>
             <div class="content__words">
@@ -89,7 +87,9 @@
           </div>
         </div>
       </div>
+
       <div class="footer">
+        <hr />
         <div class="footer__group">
           <div class="footer__group__groups">
             <img src="./images/Footer/Vector-3.svg" alt="footers" />
@@ -107,11 +107,19 @@
             <img src="./images/Footer/Vector-1.svg" alt="footers" />
           </div>
         </div>
+        <hr />
         <div class="footer__icons">
           <div class="footer__empty"></div>
           <div class="footer__icons__image">
             <img
+              class="eighteen"
               src="./images/Footer/127.png"
+              alt="icons"
+              style="height: 20px"
+            />
+            <img
+              class="eighteen_mobile"
+              src="./images-mobile/bg/icon.png"
               alt="icons"
               style="height: 20px"
             />
@@ -124,127 +132,28 @@
         </div>
       </div>
       <div class="ballsFirst">
-        <img src="./images/Elements/Ball1.png" alt="balls" />
+        <img class="ballOne" src="./images/Elements/Ball1.png" alt="balls" />
+        <img
+          class="mobileOne"
+          src="./images-mobile/balls/ball1.png"
+          alt="balls"
+        />
       </div>
       <div class="ballsSecond">
-        <img src="./images/Elements/Ball2.png" alt="balls" />
+        <img class="ballTwo" src="./images/Elements/Ball2.png" alt="balls" />
+        <img
+          class="mobileTwo"
+          src="./images-mobile/balls/ball2.png"
+          alt="balls"
+        />
       </div>
       <div class="ballsThird">
-        <img src="./images/Elements/Ball3.png" alt="balls" />
-      </div>
-    </div>
-    <div class="mob_wrapper">
-      <div class="mob_wrapper__clikablle">
-        <img src="./images/Header/clickable.gif" alt="clikablle" />
-      </div>
-      <div class="mob_wrapper__content">
-        <div class="mob_wrapper__content__knight">
-          <img src="./images-mobile/knight/knight.png" alt="knight" />
-        </div>
-
-        <div class="mob_wrapper__words">
-          <h1 class="mob_wrapper__words__tUp">
-            лучший <br />
-            <p>фронтэнд</p>
-            <p class="second">на башне</p>
-          </h1>
-          <h1 class="mob_wrapper__words__tDown">
-            лучший <br />
-            <p>фронтэнд</p>
-            <p class="second">на башне</p>
-          </h1>
-        </div>
-      </div>
-      <div class="mob_wrapper__present"><span>дарим</span></div>
-      <div class="mob_wrapper__likes">
-        <div class="mob_wrapper__likes__l_likes">
-          <img src="./images/Bonus/l_likes.png" alt="likes" />
-        </div>
-        <div class="mob_wrapper__likes__r_likes">
-          <img src="./images/Bonus/l_likes.png" alt="likes" />
-        </div>
-        <div class="mob_wrapper__likes__transparent">
-          <img src="./images/Bonus/likes-2.png" alt="likes" />
-        </div>
-        <div class="mob_wrapper__likes__yellow">
-          <img src="./images/Bonus/likes.gif" alt="likes" />
-        </div>
-      </div>
-      <div class="mob_wrapper__ForBuilding">
-        <span
-          >за четкую <br />
-          <p>верстку</p></span
-        >
-      </div>
-      <div class="mob_wrapper__button">
-        <button id="mob_but">
-          <span>Надави сюда</span>
-        </button>
-        <div class="mob_wrapper__button__shadow"></div>
-      </div>
-      <div class="mob_wrapper__rules">
-        <a id="rules_a" href="#">Правила и условия</a>
-      </div>
-      <div class="mob_wrapper__divider">
-        <div class="mob_wrapper__divider__cup">
-          <img src="./images/Cup/Cup.gif" alt="clicker" />
-        </div>
-        <div class="mob_wrapper__divider__text">
-          <div class="mob_wrapper__divider__text__prize">
-            <span
-              >ПРЕМИЯ ЗА ЛУЧШУЮ <br />
-              ВЕРСТКУ без говна</span
-            >
-          </div>
-          <div class="mob_wrapper__divider__text__results">
-            <span>*ПО РЕЗУЛЬТАТАМ ПРЕМИИ Huinya sobachiya 2021</span>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="mob_wrapper__footer">
-        <div class="mob_wrapper__footer__groupUp">
-          <div class="mob_wrapper__footer__groupUp__groups">
-            <img src="./images/Footer/Vector-3.svg" alt="footers" />
-          </div>
-          <div class="mob_wrapper__footer__groupUp__groups">
-            <img src="./images/Footer/Vector-2.svg" alt="footers" />
-          </div>
-        </div>
-        <div class="mob_wrapper__footer__groupUp">
-          <div class="mob_wrapper__footer__groupUp__groups">
-            <img src="./images/Footer/webmoney.gif" alt="footers" />
-          </div>
-          <div class="mob_wrapper__footer__groupUp__groups">
-            <img src="./images/Footer/Vector-4.svg" alt="footers" />
-          </div>
-          <div class="mob_wrapper__footer__groupUp__groups">
-            <img src="./images/Footer/Vector-1.svg" alt="footers" />
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="mob_wrapper__icons">
-          <img
-            src="./images-mobile/bg/icon.png"
-            alt="icons"
-          />
-          <img
-            src="./images/Footer/Vector.svg"
-            alt="icons"
-          />
-      </div>
-      <div class="mob_wrapper__balls">
-        <div class="mob_wrapper__balls__ballsFirst">
-          <img src="./images-mobile/balls/ball1.png" alt="balls" />
-        </div>
-        <div class="mob_wrapper__balls__ballsSecond">
-          <img src="./images-mobile/balls/ball2.png" alt="balls" />
-        </div>
-        <div class="mob_wrapper__balls__ballsThird">
-          <img src="./images-mobile/balls/ball3.png" alt="balls" />
-        </div>
-        <div class="mob_wrapper__logo"></div>
+        <img class="ballTHree" src="./images/Elements/Ball3.png" alt="balls" />
+        <img
+          class="mobileThree"
+          src="./images-mobile/balls/ball3.png"
+          alt="balls"
+        />
       </div>
     </div>
 

@@ -1,0 +1,119 @@
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+    .image_knight,
+    .ballOne,
+    .ballTwo,
+    .ballTHree {
+      display: none;
+    }
+    .image_mobile_knight,
+    .mobileOne,
+    .mobileTwo,
+    .mobileThree {
+      display: flex;
+    }
+    .wrapper {
+      
+      &__main {
+        flex: 0.2 0 auto;
+        .header {
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          &__clicker {
+            & img {
+              height: 70%;
+            }
+          }
+          &__divider{
+            height: 45px;
+          }
+          &__cup {
+            margin-top: 0;
+            margin-right: 0;
+            & img {
+              height: 100%;
+            }
+          }
+          &__prize {
+            font-size: 15px;
+          }
+          .logo {
+            left: 56%;
+            top: 56%;
+          }
+        }
+      }
+      .bonus {
+        font-size: 1.5em;
+        line-height: 30px;
+        z-index: 42;
+        &__ForBuilding p {
+          text-indent: 0.5em;
+        }
+      }
+      .likes {
+        &__logo img {
+          height: 60px;
+          width: 100%;
+        }
+      }
+    }
+    .content {
+      &__button {
+        & span {
+          font-size: 1em;
+        }
+        & button {
+          height: 50px;
+          width: 80%;
+          z-index: 40;
+        }
+        &__shadow {
+          width: 80%;
+          top: -86%;
+        }
+      }
+      &__text {
+        position: absolute;
+        top: 75%;
+        line-height: 30px;
+        font-size: 1.4em;
+        .knight {
+          left: -4%;
+          height: 50vh;
+          top: -110%;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__group {
+        justify-content: center;
+        &__groups {
+          margin: 0 10px;
+        }
+      }
+      &__icons {
+        &__image img {
+          margin: 0 10px;
+        }
+      }
+      &__empty {
+        display: none;
+      }
+    }
+    .ballsFirst {
+      left: 50%;
+      top: 20%;
+    }
+    .ballsSecond {
+      left: 20%;
+      top: 20%;
+    }
+    .ballsThird {
+      left: 25%;
+      top: 50%;
+    }
+  }

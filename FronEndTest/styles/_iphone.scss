@@ -1,0 +1,162 @@
+@media only screen and (max-width: 320px) {
+    .image_knight,
+    .eighteen,
+    .ballOne,
+    .ballTwo,
+    .ballTHree {
+      display: none;
+    }
+    .image_mobile_knight,
+    .mobileOne,
+    .mobileTwo,
+    .eighteen_mobile,
+    .mobileThree {
+      display: flex;
+    }
+    hr {
+      display: block;
+      border-color: rgba(255, 255, 255, 0.4);
+      width: 100%;
+      margin: 7px 0;
+    }
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      background: url("../images-mobile/bg/castle.png") no-repeat right 15%,
+        url("../images-mobile/bg/circle.png") no-repeat left 40%,
+        url("../images-mobile/bg/bg.png") no-repeat center center;
+      background-size: 90% 40%, 30%, cover;
+      &__main {
+        .header {
+          height: 50px;
+          align-items: center;
+          text-align: center;
+          flex-direction: column;
+          margin-bottom: 50%;
+          flex: 0.2 0 auto;
+          &__clicker {
+            & img {
+              height: 50%;
+            }
+          }
+          &__divider {
+            position: absolute;
+            top: 75%;
+            height: 30px;
+          }
+          &__cup {
+            margin-top: 0;
+            margin-right: 0;
+            & img {
+              height: 100%;
+            }
+          }
+          &__prize {
+            font-size: 11px;
+          }
+          &__results {
+            font-size: 5px;
+            line-height: 9px;
+          }
+          .logo {
+            width: 130px;
+            height: 130px;
+            left: 40%;
+            top: 5%;
+          }
+        }
+      }
+      .bonus {
+        font-size: 1em;
+        letter-spacing: 2px;
+        line-height: 20px;
+        z-index: 42;
+        &__ForBuilding {
+          text-align: end;
+          & p {
+            text-indent: 0.5em;
+          }
+        }
+      }
+      .likes {
+        &__logo img {
+          height: 40px;
+          width: 100%;
+        }
+      }
+    }
+    .content {
+      &__wrapper {
+        width: 100%;
+      }
+      &__button {
+        & span {
+          font-size: 0.7em;
+        }
+        & button {
+          height: 35px;
+          width: 80%;
+        }
+        &__shadow {
+          width: 80%;
+          top: -86%;
+        }
+      }
+      &__rules {
+        margin-top: 10px;
+        font-size: 10px;
+      }
+      &__text {
+        position: absolute;
+        top: 25%;
+        line-height: 30px;
+        font-size: 1.2em;
+        .knight {
+          left: -4%;
+          height: 45vh;
+          top: -70%;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__group {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 0fr 1fr;
+        text-align: center;
+        &__groups {
+          margin: 0 10px;
+          & img {
+            height: 17px;
+          }
+        }
+        & :nth-child(2) {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+      }
+      &__icons {
+        &__image img {
+          margin: 0 10px;
+        }
+      }
+      &__empty {
+        display: none;
+      }
+    }
+    .ballsFirst {
+      left: 50%;
+      top: 20%;
+    }
+    .ballsSecond {
+      left: 20%;
+      top: 20%;
+    }
+    .ballsThird {
+      left: 25%;
+      top: 50%;
+    }
+  }

@@ -3,27 +3,18 @@ const diamond = document.querySelector(".logo");
 const bg = document.querySelector(".image_knight");
 const button = document.getElementById("cont_but");
 const shadow = document.querySelector(".content__button__shadow");
-const rules = document.querySelector(".rules");
+const rules = document.querySelector(".content__rules");
 const ball1 = document.querySelector(".ballsFirst");
 const ball2 = document.querySelector(".ballsSecond");
 const ball3 = document.querySelector(".ballsThird");
 
-const clickable = document.querySelector(".mob_wrapper__clikablle");
-const mobileRules = document.querySelector(".mob_wrapper__rules");
 const span = document.querySelectorAll("span");
-const mobileBall1 = document.querySelector(".mob_wrapper__balls__ballsFirst");
-const mobileBall2 = document.querySelector(".mob_wrapper__balls__ballsSecond");
-const mobileBall3 = document.querySelector(".mob_wrapper__balls__ballsThird");
-const mobDiamond = document.querySelector(".mob_wrapper__logo");
 
 rules.addEventListener("mouseover", show);
 rules.addEventListener("mouseout", hide);
 rules.addEventListener("click", changecolor);
 
-mobileRules.addEventListener("click", changeText);
-
 clicker.addEventListener("click", go);
-clickable.addEventListener("click", mobile);
 
 function go(e) {
   if (diamond.style.display === "") {
@@ -72,10 +63,6 @@ function getRund() {
 animation(ball1, 10, 100);
 animation(ball2, 20, 80);
 animation(ball3, 5, 120);
-
-animation(mobileBall1, 10, 100);
-animation(mobileBall2, 20, 80);
-animation(mobileBall3, 5, 120);
 
 function animation(el, a, b) {
   el.animate(

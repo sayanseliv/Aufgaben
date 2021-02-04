@@ -1,20 +1,17 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .wrapper {
-    background-size: 100%, 100%, 60% 70vh, cover;
     &__main {
       .header {
-        flex-direction: column;
-        align-items: flex-start;
         &__clicker {
           & img {
-            height: 60%;
+            height: 30%;
           }
         }
         &__cup {
           margin-top: -4px;
           margin-right: 0;
           & img {
-            height: 67%;
+            height: 35%;
           }
         }
         &__prize {
@@ -22,7 +19,7 @@
         }
         .logo {
           left: 40%;
-          top: 5%;
+          top: 10%;
         }
       }
     }
@@ -35,79 +32,53 @@
       }
     }
     .likes {
-      margin: 0;
-      &__l_likes {
-        & img {
-          height: 35px;
-        }
-      }
-      &__r_likes {
-        padding-left: 19px;
-        & img {
-          height: 35px;
-        }
-      }
-      &__transparent {
-        padding-left: 9px;
-        & img {
-          height: 46px;
-        }
-      }
-      &__yellow {
-        padding-left: 47px;
-        & img {
-          height: 46px;
-        }
+      &__logo img {
+        height: 60px;
       }
     }
   }
 
   .content {
-    justify-content: initial;
     &__button {
-      flex: 0.3 0 auto;
-      flex-basis: 103px;
       & span {
         font-size: 1em;
       }
       & button {
-        height: 40px;
+        height: 50px;
         width: 80%;
       }
       &__shadow {
-        height: 44%;
         width: 80%;
-        top: -38%;
+        top: -86%;
       }
     }
     &__text {
       line-height: 20px;
       font-size: 1em;
       .knight {
-        left: 45%;
-        height: 70vh;
-        top: 37%;
+        left: 30%;
+        height: 60vh;
+        top: 46%;
       }
     }
-  }
-  .rules {
-    top: 150%;
   }
   .footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     &__group {
       align-items: center;
       &__groups {
-        margin: 0 10px 0 10px;
+        margin: 0 10px;
       }
     }
     &__icons {
-      justify-content: flex-end;
       &__image img {
-        margin: 0 10px 0 10px;
+        margin: 0 10px;
       }
+    }
+    &__empty {
+      display: none;
     }
   }
   .ballsFirst {
