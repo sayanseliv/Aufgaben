@@ -115,9 +115,9 @@ document.addEventListener("keyup", function (event) {
     target.animate(
       [
         // keyframes
-        { transform: "translate(0) rotate(180 deg)" },
+        { transform: "translate(0)" },
         { transform: "translate(0," + -h(from, to) + "px)" },
-        { transform: "translate(0) rotate(180 deg)" },
+        { transform: "translate(0)" },
       ],
       {
         // timing options
