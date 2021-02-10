@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'DejaVu Serif Condensed';
+    src: url('DejaVuSerifCondensed-Bold.woff2') format('woff2'),
+        url('DejaVuSerifCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif';
+    src: url('DejaVuSerif.woff2') format('woff2'),
+        url('DejaVuSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif Condensed';
+    src: url('DejaVuSerifCondensed-BoldItalic.woff2') format('woff2'),
+        url('DejaVuSerifCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif';
+    src: url('DejaVuSerif-Bold.woff2') format('woff2'),
+        url('DejaVuSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif Condensed';
+    src: url('DejaVuSerifCondensed-Italic.woff2') format('woff2'),
+        url('DejaVuSerifCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif';
+    src: url('DejaVuSerif-Italic.woff2') format('woff2'),
+        url('DejaVuSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif';
+    src: url('DejaVuSerif-BoldItalic.woff2') format('woff2'),
+        url('DejaVuSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu Serif Condensed';
+    src: url('DejaVuSerifCondensed.woff2') format('woff2'),
+        url('DejaVuSerifCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

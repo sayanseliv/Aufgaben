@@ -1,0 +1,12 @@
+$center: center;
+$disp: flex;
+@mixin flex-r-c($disp: flex, $dir: row, $just-c: center) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just-c;
+}
+@mixin flex-c-c($disp:flex, $dir: column, $just-c: center) {
+    display: $disp;
+    flex-direction: $dir;
+    justify-content: $just-c;
+}

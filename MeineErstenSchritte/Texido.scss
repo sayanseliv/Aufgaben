@@ -1,0 +1,542 @@
+@import "fonts/fonts";
+@import "styles/core";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  ::selection {
+    background: rgb(255, 204, 0);
+  }
+}
+html,
+body {
+  font-family: "Trump Gothic East", "Trump Gothic East Bold",
+    "Trump Gothic Bold Italic", "Trump Gothic Italic";
+  height: 100%;
+  background-image: url(http://teixido.co/gfx/backs/background_opcion2.jpg);
+  object-fit: cover;
+  // overflow-x: hidden;
+}
+.navigation {
+  @include flex-r-c;
+}
+.logo {
+  height: 100px;
+  width: 102px;
+  background-image: url("http://teixido.co/gfx/logo.png");
+  background-size: auto 200px;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+  margin-left: -260px;
+  margin-right: 100px;
+}
+.logo:hover {
+  background-position: left bottom;
+  cursor: pointer;
+}
+.logo-ul {
+  font-size: 29px;
+  letter-spacing: 2px;
+  li {
+    display: inline-flex;
+    &:nth-child(1) {
+      height: 150px;
+      width: 90px;
+      padding-top: 70px;
+      background-image: url(http://teixido.co/gfx/menu/home_active.png);
+      background-repeat: no-repeat;
+      object-fit: cover;
+      justify-content: $center;
+    }
+    &:nth-child(n + 2) {
+      padding: 0 15px 0 15px;
+      margin: 0 10px 0 10px;
+    }
+    &:nth-child(n + 2):hover {
+      background-image: url(http://teixido.co/gfx/menu/studio_hover.png);
+      height: 135px;
+      object-fit: cover;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding-top: 70px;
+    }
+  }
+}
+a {
+  text-decoration: none;
+}
+.Texi {
+  color: white;
+}
+.unuse {
+  color: #39444a;
+}
+.header {
+  @include flex-c-c;
+}
+h1 {
+  font-family: "Trump Gothic East";
+  font-size: 145px;
+  line-height: 140%;
+  letter-spacing: 12px;
+  font-weight: 900;
+  text-align: $center;
+  color: #39444a;
+  margin-bottom: -32px;
+}
+.umschlag {
+  justify-content: $center;
+  align-self: $center;
+  width: 739px;
+}
+p {
+  font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+  font-style: normal;
+  line-height: 160%;
+  font-size: 19px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  padding: 0px;
+  color: #39444a;
+}
+.slider {
+  display: $disp;
+  justify-content: $center;
+  align-self: $center;
+  cursor: pointer;
+}
+.chicken {
+  border: solid 10px white;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.chick {
+  border: solid 10px white;
+}
+.nav-footnote {
+  @include flex-r-c;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #39444a;
+  font-family: "Trump Gothic East";
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.foot {
+  display: $disp;
+  flex-direction: row;
+  .foot-span {
+    margin-left: 0px;
+  }
+}
+.foot-bullet {
+  padding-left: 320px;
+}
+.note {
+  display: $disp;
+  flex-direction: row;
+}
+.note-bullet {
+  padding-left: 180px;
+}
+.note-span {
+  margin-left: 45px;
+}
+.Bullet1 {
+  cursor: pointer;
+}
+.Bullet2 {
+  cursor: pointer;
+}
+.words {
+  @include flex-c-c;
+  margin-top: 30px;
+}
+.hr {
+  height: 6px;
+  background: url(http://teixido.co/gfx/backs/back_border.png);
+  align-self: $center;
+  width: 700px;
+}
+hr {
+  border-width: 1px;
+  border-color: black;
+}
+.another-words {
+  display: $disp;
+  flex-direction: column;
+  align-self: $center;
+  width: 700px;
+}
+h2 {
+  margin-left: -50px;
+  font-family: "Trump Gothic East", Arial, Helvetica;
+  font-size: 40px;
+  line-height: 180%;
+  letter-spacing: 5px;
+  font-weight: bold;
+  text-align: $center;
+  color: #39444a;
+}
+.words-paragraph {
+  font-family: "DejaVu-Serif-Condensed", serif;
+  line-height: 160%;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  margin-bottom: 15px;
+}
+.smallcaps {
+  font-size: 10px;
+}
+.info-desktop {
+  @include flex-r-c;
+  align-items: $center;
+  background-image: url(http://teixido.co/gfx/backs/back_procesos.png);
+  background-position: $center top;
+  background-repeat: no-repeat;
+  height: 227px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: $center;
+  line-height: 150%;
+}
+.fixator {
+  display: none;
+}
+.info-tablet {
+  display: none;
+}
+.info-mobile {
+  display: none;
+}
+.plan {
+  width: 208px;
+  h3 {
+    margin-right: 60px;
+    color: #575757;
+    font-weight: 400;
+  }
+}
+.design {
+  width: 208px;
+  h3 {
+    margin-left: 15px;
+    color: #68482e;
+    font-weight: 400;
+  }
+}
+.build {
+  width: 298px;
+  h3 {
+    color: #6e6523;
+    font-weight: 400;
+  }
+}
+.launch {
+  width: 208px;
+  h3 {
+    color: #4f5d69;
+    font-weight: 400;
+  }
+}
+.manage {
+  width: 208px;
+  h3 {
+    margin-left: 70px;
+    color: #ce302e;
+    font-weight: 400;
+  }
+}
+.sentence-tablet {
+  display: none;
+}
+.sentence-laptop {
+  @include flex-r-c;
+  .sentences {
+    font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+    font-size: 14px;
+    display: $disp;
+    flex-direction: column;
+    align-items: $center;
+    width: 208px;
+    em {
+      letter-spacing: 0.3px;
+      line-height: 30px;
+    }
+    &:nth-child(1) {
+      margin-left: 12px;
+    }
+    &:nth-child(2) {
+      margin-left: 43px;
+    }
+    &:nth-child(3) {
+      margin-left: 45px;
+    }
+    &:nth-child(4) {
+      margin-left: 31px;
+    }
+    &:nth-child(5) {
+      margin-left: 45px;
+    }
+  }
+  p {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 160%;
+  }
+}
+.clients {
+  @include flex-r-c;
+  align-items: $center;
+  .text-clients {
+    @include flex-c-c;
+    width: 208px;
+    .hr-clients {
+      border-width: 0px;
+      height: 7px;
+      background: url(http://teixido.co/gfx/backs/back_border.png) top repeat-x;
+    }
+    h2 {
+      margin-left: 0px;
+    }
+    p {
+      font-family: "DejaVu-Serif-Condensed", serif;
+      line-height: 160%;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      margin-bottom: 15px;
+    }
+  }
+  .testimonials {
+    @include flex-r-c;
+    align-items: $center;
+    width: 456px;
+    height: 456px;
+    padding: 80px 0px 80px 0px;
+    background: url(http://teixido.co/gfx/backs/back_yellow.png) repeat;
+    border-radius: 230px 230px 230px 230px;
+    text-align: $center;
+    line-height: 140%;
+    margin: 0 -15px 34px 46px;
+    .slider-left {
+      width: 18px;
+      height: 31px;
+      margin-left: 40px;
+      background: url(http://teixido.co/gfx/sliders/arrow_slider.png) no-repeat;
+      cursor: pointer;
+    }
+    .testimonials-text {
+      width: 278px;
+      height: 235px;
+      font-family: "DejaVu-Serif-Condensed", serif;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+      margin: 0 20px 0 20px;
+      line-height: 144%;
+      .hr-white {
+        height: 10px;
+        hr {
+          border-color: white;
+          border-top: 1px solid #fff;
+          margin-top: 20px;
+        }
+      }
+      p {
+        font-family: "DejaVu-Serif-Condensed", serif;
+        font-style: normal;
+        font-size: 15px;
+        .smallcaps {
+          font-size: 12px;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+    .slider-right {
+      width: 38px;
+      height: 31px;
+      margin-right: 40px;
+      display: block;
+      background: url(http://teixido.co/gfx/sliders/arrow_slider.png) no-repeat -17px
+        0px;
+      cursor: pointer;
+    }
+  }
+}
+.lists {
+  @include flex-r-c;
+  .list2 {
+    margin: 0 109px 0 109px;
+  }
+}
+.client-list {
+  padding-left: 16px;
+  line-height: 175%;
+  font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  list-style-image: url(http://teixido.co/gfx/backs/back_li_star.png);
+}
+.call-action {
+  @include flex-r-c;
+  align-items: $center;
+  height: 205px;
+  .ribbon {
+    display: $disp;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 35px;
+    height: 204px;
+    width: 1007px;
+    padding: 81px 44px 0px 84px;
+    background: url(http://teixido.co/gfx/backs/back_call_to_action_invisible.gif)
+        no-repeat 352px 47px,
+      url(http://teixido.co/gfx/backs/back_call_to_action_ribbon.jpg) no-repeat
+        left center,
+      url(http://teixido.co/gfx/backs/back_call_to_action.png) repeat-x center
+        left;
+    h2 {
+      font-family: "Trump Gothic East", Arial, Helvetica;
+      padding-bottom: 50px;
+      margin: -6px 0 0 -15px;
+      font-size: 33px;
+      letter-spacing: 2px;
+      line-height: 180%;
+      font-weight: 400;
+    }
+    p {
+      font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+      margin: 11px 0 0 35px;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 160%;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+  .c1 {
+    background: url(http://teixido.co/gfx/backs/back_call_to_action_circle.png)
+      left 0px no-repeat;
+    width: 206px;
+    height: 205px;
+    margin-top: 33px;
+    transition-timing-function: ease-in;
+    .request-external {
+      margin: 46px 0 0 49px;
+      text-align: $center;
+    }
+    span {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      font-style: italic;
+      margin-right: 59px;
+    }
+    h2 {
+      font-weight: 400;
+    }
+    a {
+      color: white;
+    }
+  }
+  .c1:hover {
+    background: url(http://teixido.co/gfx/backs/back_call_to_action_circle.png)
+      left -205px no-repeat;
+    cursor: pointer;
+  }
+}
+.positioner {
+  @include flex-c-c;
+  align-items: $center;
+  footer {
+    display: $disp;
+    justify-content: space-around;
+    align-items: $center;
+    width: 1200px;
+    height: 207px;
+    margin-top: 40px;
+    background: url(http://teixido.co/gfx/backs/footer_right_s.jpg) no-repeat
+        scroll right top,
+      url(http://teixido.co/gfx/backs/footer_left_s.jpg) no-repeat scroll left
+        top,
+      url(http://teixido.co/gfx/backs/footer_bg_s.jpg) repeat scroll right top
+        transparent;
+    line-height: 140%;
+    h3 {
+      font-family: "Trump Gothic East", Arial, Helvetica;
+      font-size: 22px;
+      color: #39444a;
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-right: 20px;
+      margin-bottom: 3px;
+    }
+    .browser {
+      margin-left: -32px;
+    }
+    .connect {
+      margin-right: 60px;
+    }
+    nav {
+      margin-left: -40px;
+    }
+    ul {
+      list-style-type: none;
+      line-height: 93%;
+      li a {
+        font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+        font-size: 12px;
+        color: #39444a;
+        padding-left: 14px;
+        background: url(http://teixido.co/gfx/backs/back_footer_li_arrow.png)
+          no-repeat 0px 1px;
+      }
+    }
+    a:hover {
+      color: white;
+    }
+  }
+  img {
+    margin-left: -63px;
+    cursor: pointer;
+    transform: scale(1) rotate(0) translate3d(0, 0, 0);
+  }
+  .timeline {
+    width: 300px;
+  }
+  .copy {
+    display: $disp;
+    flex-direction: row;
+    align-items: $center;
+    font-family: "DejaVu-Serif-Condensed", serif;
+    text-align: $center;
+    margin: 40px 0 40px 0;
+    font-size: 14px;
+    height: 100px;
+    .strike {
+      width: 315px;
+      height: 10px;
+      padding-top: 10px;
+      background: url(http://teixido.co/gfx/backs/back_copy_line.png) repeat-x
+        left center;
+    }
+    .copyright {
+      margin: 0 45px 0 45px;
+    }
+    p {
+      margin-top: 35px;
+      font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 160%;
+    }
+    .copyright span.smallcaps {
+      font-family: "republic-web-1", "republic-web-2", serif;
+      // text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+    }
+  }
+}
+@import "styles/tablets";
+@import "styles/phones";

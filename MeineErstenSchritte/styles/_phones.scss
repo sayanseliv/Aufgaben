@@ -1,0 +1,319 @@
+@media only screen and (max-width: 767px) {
+    .navigation {
+      display: $disp;
+      flex-direction: column;
+      align-items: $center;
+      padding-right: 70px;
+    }
+    .logo {
+      margin-left: 170px;
+    }
+    .logo-ul {
+      text-align: center;
+      list-style: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+      padding-top: 18px;
+      li {
+        &:nth-child(1) {
+          height: 24px;
+          width: 35px;
+          padding-top: 2px;
+        }
+        &:nth-child(n + 2) {
+          padding: 0 2px 0 2px;
+          margin: 0;
+        }
+        &:nth-child(n + 2):hover {
+          background-color: white;
+          height: 19px;
+          background-repeat: no-repeat;
+          padding-top: 2px;
+        }
+      }
+    }
+    h1 {
+      font-size: 64px;
+      letter-spacing: 3.8px;
+      line-height: 140%;
+      font-weight: 600;
+      text-align: $center;
+      color: #39444a;
+      margin-top: 1%;
+      margin-bottom: -20px;
+    }
+    .umschlag {
+      padding-top: 10px;
+      width: 305px;
+    }
+    p {
+      margin-bottom: 0;
+      padding-left: 10px;
+      line-height: 160%;
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+    .chicken {
+      display: none;
+    }
+    .chick {
+      display: none;
+    }
+    .nav-footnote {
+      display: none;
+    }
+    .words {
+      margin-top: 20px;
+    }
+    .hr {
+      width: 300px;
+      margin-left: 16px;
+    }
+    hr {
+      display: none;
+    }
+    .another-words {
+      width: 300px;
+    }
+    h2 {
+      padding-top: 10px;
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: 1.8px;
+      margin-left: 6px;
+    }
+    .words-paragraph {
+      margin-left: -4px;
+      margin-right: 8px;
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+    .smallcaps {
+      font-size: 11px;
+    }
+    .info-desktop {
+      display: none;
+    }
+    .info-tablet {
+      display: none;
+    }
+    .info-mobile {
+      @include flex-c-c;
+      align-items: $center;
+      margin-top: 10px;
+      font-stretch: ultra-condensed;
+    }
+    em {
+      font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 30px;
+    }
+    .plan {
+      width: 300px;
+      margin-left: 10px;
+      h3 {
+        margin-top: 10px;
+        font-family: "Trump Gothic East";
+        font-size: 24px;
+        color: #575757;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        margin-left: -10px;
+      }
+    }
+    .design {
+      width: 300px;
+      margin-left: 10px;
+      h3 {
+        margin-left: 0;
+        margin-top: 20px;
+        font-family: "Trump Gothic East";
+        font-size: 24px;
+        color: #68482e;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        margin-left: -10px;
+      }
+    }
+    .build {
+      width: 300px;
+      margin-left: 10px;
+      h3 {
+        margin-top: 20px;
+        color: #6e6523;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        margin-left: -10px;
+      }
+    }
+    .launch {
+      width: 300px;
+      margin-left: 10px;
+      h3 {
+        margin-top: 20px;
+        color: #4f5d69;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        margin-left: -10px;
+      }
+    }
+    .manage {
+      width: 300px;
+      margin-left: 10px;
+      h3 {
+        margin-top: 20px;
+        margin-left: 0;
+        color: #ce302e;
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+      p {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 150%;
+        margin-left: -10px;
+      }
+    }
+    .sentence-laptop {
+      display: none;
+    }
+    .sentence-tablet {
+      display: none;
+    }
+    .clients .text-clients {
+      width: 290px;
+      .hr-clients {
+        margin-top: 20px;
+      }
+      h2 {
+        text-align: start;
+      }
+      p {
+        padding: 0px;
+        font-size: 12px;
+      }
+    }
+    .clients .testimonials {
+      display: none;
+    }
+    .lists {
+      flex-direction: column;
+      align-items: $center;
+      margin-right: 105px;
+      .list2 {
+        margin: 0;
+        width: 183px;
+      }
+    }
+    .call-action .ribbon {
+      display: $disp;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 150px;
+      width: 290px;
+      padding: 20px 30px 0px 0px;
+      margin-left: 12px;
+      background: url(http://teixido.co/gfx/backs/back_call_to_action_dot.png)
+          no-repeat 0px 2px,
+        url(http://teixido.co/gfx/backs/back_call_to_action_dot.png) no-repeat
+          285px 2px,
+        url(http://teixido.co/gfx/backs/back_call_to_action.png) repeat-x center
+          left;
+      h2 {
+        margin: 0;
+        margin-right: 45px;
+        padding: 0px;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+      p {
+        font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        line-height: 160%;
+        padding: 0px;
+        margin-top: 5px;
+        width: 200px;
+      }
+      .mobile-only {
+        display: $disp;
+        margin-top: 0px;
+      }
+    }
+    .c1 {
+      display: none;
+    }
+    .positioner {
+      footer {
+        width: 286px;
+        height: 166px;
+        margin: 20px 0 0 17px;
+        background: url(http://teixido.co/gfx/backs/footer_right_s.jpg) no-repeat
+            scroll right bottom,
+          url(http://teixido.co/gfx/backs/footer_left_s.jpg) no-repeat scroll left
+            bottom,
+          url(http://teixido.co/gfx/backs/footer_bg_s.jpg) repeat scroll right
+            bottom transparent;
+        h3 {
+          margin-bottom: 10px;
+          font-size: 27px;
+        }
+        .connect {
+          margin-right: 45px;
+        }
+      }
+      img {
+        display: none;
+      }
+      .browser {
+        display: none;
+      }
+      .timeline {
+        display: none;
+      }
+      .copy {
+        width: 289px;
+        text-align: $center;
+        margin-top: 20px;
+        font-size: 12px;
+        height: 100px;
+        margin-left: 20px;
+        p {
+          padding: 0px;
+          letter-spacing: 0;
+          font-size: 13px;
+        }
+        .strike {
+          width: 117px;
+        }
+        .copyright {
+          margin: 0 5px 0 5px;
+        }
+      }
+    }
+  }
+  

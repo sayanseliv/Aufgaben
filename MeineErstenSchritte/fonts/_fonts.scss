@@ -1,0 +1,138 @@
+@font-face {
+    font-family:'Trump Gothic East';
+    src: url('../Homework11/fonts/Trump Gothic East.eot');
+	src: url('../Homework11/fonts/Trump Gothic East.eot?#iefix') format('embedded-opentype'),
+		url('../Homework11/fonts/Trump Gothic East.woff2') format('woff2'),
+		url('../Homework11/fonts/Trump Gothic East.woff') format('woff'),
+		url('../Homework11/fonts/Trump Gothic East.ttf') format('truetype'),
+		url('../Homework11/fonts/Trump Gothic East.svg#Trump Gothic East') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family:'Trump Gothic East Bold';
+    src: url('../Homework11/fonts/Trump Gothic East Bold.eot');
+	src: url('../Homework11/fonts/Trump Gothic East Bold.eot?#iefix') format('embedded-opentype'),
+		url('../Homework11/fonts/Trump Gothic East Bold.woff2') format('woff2'),
+		url('../Homework11/fonts/Trump Gothic East Bold.woff') format('woff'),
+		url('../Homework11/fonts/Trump Gothic East Bold.ttf') format('truetype'),
+		url('../Homework11/fonts/Trump Gothic East Bold.svg#Trump Gothic East Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+@font-face {
+    font-family:'Trump Gothic Bold Italic';
+    src: url('../Homework11/fonts/Trump Gothic East Bold Italic.eot');
+	src: url('../Homework11/fonts/Trump Gothic East Bold Italic.eot?#iefix') format('embedded-opentype'),
+		url('../Homework11/fonts/Trump Gothic East Bold Italic.woff2') format('woff2'),
+		url('../Homework11/fonts/Trump Gothic East Bold Italic.woff') format('woff'),
+		url('../Homework11/fonts/Trump Gothic East Bold Italic.ttf') format('truetype'),
+		url('../Homework11/fonts/Trump Gothic East Bold Italic.svg#Trump Gothic East Bold Italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+@font-face {
+    font-family:'Trump Gothic Italic';
+    src: url('../Homework11/fonts/Trump Gothic East Italic.eot');
+	src: url('../Homework11/fonts/Trump Gothic East Italic.eot?#iefix') format('embedded-opentype'),
+		url('../Homework11/fonts/Trump Gothic East Italic.woff2') format('woff2'),
+		url('../Homework11/fonts/Trump Gothic East Italic.woff') format('woff'),
+		url('../Homework11/fonts/Trump Gothic East Italic.ttf') format('truetype'),
+		url('../Homework11/fonts/Trump Gothic East Italic.svg#Trump Gothic East Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+@font-face {
+    font-family: 'pill-gothic-600mg-1';
+    src: url('../Homework11/fonts/PillGothic600mg-Regular.eot');
+    src: url('../Homework11/fonts/PillGothic600mg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Homework11/fonts/PillGothic600mg-Regular.woff2') format('woff2'),
+        url('../Homework11/fonts/PillGothic600mg-Regular.woff') format('woff'),
+        url('../Homework11/fonts/PillGothic600mg-Regular.ttf') format('truetype'),
+        url('../Homework11/fonts/PillGothic600mg-Regular.svg#PillGothic600mg-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pill-gothic-600mg-2';
+    src: url('../Homework11/fonts/PillGothic600mg-Bold.eot');
+    src: url('../Homework11/fonts/PillGothic600mg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Homework11/fonts/PillGothic600mg-Bold.woff2') format('woff2'),
+        url('../Homework11/fonts/PillGothic600mg-Bold.woff') format('woff'),
+        url('../Homework11/fonts/PillGothic600mg-Bold.ttf') format('truetype'),
+        url('../Homework11/fonts/PillGothic600mg-Bold.svg#PillGothic600mg-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DejaVu-Serif-Condensed';
+    src: url('../Homework11/fonts/DejaVuSerifCondensed-Bold.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerifCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif';
+    src: url('../Homework11/fonts/DejaVuSerif.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif-Condensed';
+    src: url('../Homework11/fonts/DejaVuSerifCondensed-BoldItalic.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerifCondensed-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif';
+    src: url('../Homework11/fonts/DejaVuSerif-Bold.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif-Condensed';
+    src: url('../Homework11/fonts/DejaVuSerifCondensed-Italic.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerifCondensed-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif';
+    src: url('../Homework11/fonts/DejaVuSerif-Italic.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerif-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif';
+    src: url('../Homework11/fonts/DejaVuSerif-BoldItalic.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DejaVu-Serif-Condensed';
+    src: url('../Homework11/fonts/DejaVuSerifCondensed.woff2') format('woff2'),
+        url('../Homework11/fonts/DejaVuSerifCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

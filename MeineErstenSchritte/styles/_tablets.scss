@@ -1,0 +1,317 @@
+@media (min-width: 768px) and (max-width: 1200px) {
+    .navigation {
+      display: $disp;
+      flex-direction: column;
+      align-items: $center;
+    }
+    .logo {
+      margin-left: 140px;
+    }
+    .logo-ul {
+      list-style: none;
+      font-size: 24px;
+      letter-spacing: 1px;
+      padding-top: 25px;
+      li {
+        &:nth-child(1) {
+          height: 38px;
+          width: 60px;
+          padding-top: 5px;
+        }
+        &:nth-child(n + 2) {
+          padding: 0 5px 0 5px;
+          margin: 0 10px 0 10px;
+        }
+        &:nth-child(n + 2):hover {
+          background-color: white;
+          height: 40px;
+          background-repeat: no-repeat;
+          padding-top: 6px;
+        }
+      }
+    }
+    h1 {
+      font-size: 119px;
+      letter-spacing: 5.5px;
+      line-height: 140%;
+      font-weight: 600;
+      text-align: $center;
+      color: #39444a;
+      margin-bottom: -32px;
+    }
+    .umschlag {
+      padding-top: 10px;
+      width: 572px;
+    }
+    p {
+      padding-left: 4%;
+      line-height: 160%;
+      font-size: 15px;
+      letter-spacing: 0px;
+    }
+    .chicken {
+      width: 544px;
+      height: 334px;
+      margin-right: 0;
+      margin-left: 20px;
+    }
+    .chick {
+      display: none;
+    }
+    .foot {
+      .foot-span {
+        margin: 0 55px 0 25px;
+        font-size: 18px;
+      }
+      .foot-bullet {
+        display: none;
+      }
+    }
+    .note {
+      .note-span {
+        display: none;
+      }
+    }
+    .hr {
+      width: 520px;
+    }
+    .another-words {
+      width: 520px;
+    }
+    h2 {
+      padding-top: 10px;
+      font-size: 34px;
+      letter-spacing: 2.3px;
+    }
+    .words-paragraph {
+      margin-left: -23px;
+      margin-right: 15px;
+      font-size: 13px;
+      letter-spacing: 0;
+      margin-bottom: 15px;
+    }
+    .smallcaps {
+      font-size: 11px;
+    }
+    .info-desktop {
+      display: none;
+    }
+    .fixator {
+      @include flex-r-c;
+      height: 171px;
+    }
+    .info-tablet {
+      @include flex-r-c;
+      align-items: $center;
+      background-image: url(http://teixido.co/gfx/backs/back_procesos.png);
+      background-position: -150px -408px;
+      background-repeat: no-repeat;
+      height: 171px;
+      margin: 8px 0px 12px 37px;
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-align: $center;
+      line-height: 150%;
+      width: 528px;
+      .plan {
+        width: 100%;
+        h3 {
+          font-size: 30px;
+          margin-left: 49px;
+          color: #575757;
+          font-weight: 400;
+        }
+      }
+      .design {
+        width: 100%;
+        h3 {
+          font-size: 30px;
+          margin-left: 8px;
+          color: #68482e;
+          font-weight: 400;
+        }
+      }
+      .build {
+        width: 100%;
+        h3 {
+          font-size: 30px;
+          margin-left: 26px;
+          color: #6e6523;
+          font-weight: 400;
+        }
+      }
+      .launch {
+        display: none;
+      }
+      .manage {
+        display: none;
+      }
+    }
+    .info-mobile {
+      display: none;
+    }
+    .sentence-laptop {
+      display: none;
+    }
+    .sentence-tablet {
+      @include flex-r-c;
+      font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+      padding-top: 20px;
+      .sentences {
+        width: 168px;
+        em {
+          font-size: 14px;
+          letter-spacing: 0.3px;
+          line-height: 30px;
+        }
+        p {
+          padding: 0px;
+          font-size: 13px;
+        }
+      }
+    }
+    .info-tablet-second {
+      display: $disp;
+      flex-direction: row;
+      align-items: $center;
+      background-image: url(http://teixido.co/gfx/backs/back_procesos.png);
+      background-position: -700px -408px;
+      background-repeat: no-repeat;
+      height: 171px;
+      margin: 8px 0px 12px 37px;
+      font-size: 30px;
+      letter-spacing: 3px;
+      text-align: $center;
+      line-height: 150%;
+      width: 528px;
+      .launch {
+        width: 100%;
+        margin-left: -45px;
+        h3 {
+          font-size: 30px;
+          color: #4f5d69;
+          font-weight: 400;
+        }
+      }
+      .manage {
+        width: 100%;
+        h3 {
+          font-size: 30px;
+          margin-left: -221px;
+          color: #ce302e;
+          font-weight: 400;
+        }
+      }
+      .plan {
+        display: none;
+      }
+      .design {
+        display: none;
+      }
+      .build {
+        display: none;
+      }
+    }
+    .clients {
+      flex-direction: column;
+      .text-clients {
+        width: 528px;
+        .hr-clients {
+          line-height: 150%;
+          margin: 1px 0 0 13px;
+          width: 520px;
+        }
+        hr {
+          display: none;
+        }
+        h2 {
+          text-align: start;
+          margin-left: 14px;
+        }
+        p {
+          width: 545px;
+          font-size: 13px;
+          margin-left: -6px;
+        }
+      }
+      .testimonials {
+        margin-left: -22px;
+        .testimonials-text p .smallcaps {
+          font-size: 10px;
+        }
+      }
+    }
+    .lists {
+      .list1 {
+        margin-left: 60px;
+        width: 168px;
+      }
+      .list2 {
+        width: 168px;
+        margin: 0 20px 0 20px;
+      }
+      .list3 {
+        width: 168px;
+      }
+    }
+    .call-action .ribbon {
+      display: $disp;
+      flex-direction: column;
+      align-items: $center;
+      padding: 0 44px 0px 84px;
+      height: 156px;
+      width: 326px;
+      margin: 35px 0 0 55px;
+      h2 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        padding: 0 0 0 8px;
+      }
+      p {
+        font-family: "pill-gothic-600mg-1", "pill-gothic-600mg-2", sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        line-height: 139%;
+        margin: -40px 0 0 0;
+        padding: 0;
+      }
+    }
+    .positioner {
+      footer {
+        margin-left: 49px;
+        width: 526px;
+        height: 166px;
+        background: url(http://teixido.co/gfx/backs/footer_right_s.jpg) no-repeat
+            scroll right bottom,
+          url(http://teixido.co/gfx/backs/footer_left_s.jpg) no-repeat scroll left
+            bottom,
+          url(http://teixido.co/gfx/backs/footer_bg_s.jpg) repeat scroll right
+            bottom transparent;
+      }
+      img {
+        width: 135px;
+        margin-left: -16px;
+        margin-right: 20px;
+      }
+      .timeline {
+        display: none;
+      }
+      .copy {
+        margin-left: 39px;
+        .strike {
+          width: 40px;
+        }
+        .copyright {
+          margin: 0;
+        }
+        p {
+          font-size: 12px;
+          padding: 0;
+          .smallcaps {
+            font-size: 10px;
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
